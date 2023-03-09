@@ -41,7 +41,7 @@ a {
 }
 .header__left {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 41px;
 }
 .header__right {
