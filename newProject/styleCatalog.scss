@@ -254,240 +254,71 @@ a {
     }
 }
 
-.main {
-    display: flex;
-    gap: 128px;
-    margin-top: 96px;
-    margin-bottom: 128px;
-}
-
-.main_registration {
-    display: flex;
-    gap: 128px;
-    margin-top: 40px;
-    margin-bottom: 96px;
-}
-
 .product {
-    width: 652px;
-    display: flex;
-    gap: 31px;
-    box-shadow: 15px 18px 15px rgba(0, 0, 0, .1);
-    transition: .7s;
+    max-width: 360px;
 
     &__heading {
         font-style: normal;
         font-weight: 400;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 13px;
+        line-height: 36px;
+        text-align: center;
         color: black;
-        padding-top: 22px;
-        padding-bottom: 42px;
-        width: 202px;
-        height: 58px;
+        padding-top: 24px;
+        padding-bottom: 24.5px;
     }
 
     &__content {
+        padding-left: 16.46px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         flex-wrap: wrap;
-        gap: 6px;
-        color: $colorText;
+        background-color: $colorGreyBack;
+    }
+
+    &__text {
         font-style: normal;
-        font-weight: 400;
-        font-size: 22px;
-        line-height: 26px;
-
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 6px;
+        color: $colorText;
+        max-width: 314px;
     }
 
-    &__thisPrice {
+    &__price {
+        font-size: 16px;
         color: $colorSelectSite;
+        padding-top: 18px;
+        padding-bottom: 20px;
     }
 
-    &__quantity {
-        display: flex;
-        gap: 24.5px;
-        align-items: center;
-
-        &__input {
-            height: 24px;
-            width: 38px;
-            border: 1px solid #EAEAEA;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 18px;
-            color: #656565;
-            padding-left: 18px;
-        }
-    }
-
-
+    transition: 0.6s;
 
     &-box__content {
+        margin-top: 129.5px;
         margin-bottom: 48.5px;
-        gap: 40px;
-        display: flex;
-        flex-direction: column-reverse;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
 
     }
-
-    &__img {
-        width: 262px;
-        height: 306px;
-    }
-
-
 
     &:hover {
         transform: scale(1.05);
     }
-
-    &__cross:hover path {
-        fill: $colorSelectSite;
-    }
 }
 
-.product2__img {
+.product2 {
     background-color: $colorPinkBack;
-}
+    justify-content: center;
 
-.button {
 
-    border: 1px solid $colorButtons;
-    ;
-    width: 235px;
-    height: 50px;
-    cursor: pointer;
-    background-color: #FFFFFF;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: $colorBlackBack;
-    cursor: pointer;
-    transition: .6s;
-
-    &:hover {
-        background-color: $colorSelectSite;
-        color: #FFFFFF;
-    }
-
-    &-wrapper {
-        display: flex;
-        gap: 192.5px;
+    &__img {
+        padding: 9px 82px;
     }
 }
-
-.checkout {
-    padding-top: 17px;
-    display: flex;
-    gap: 57px;
-    flex-direction: column;
-}
-
-.shipping {
-
-    &__heading {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        color: $colorBlackBack;
-        margin-bottom: 20.5px;
-    }
-
-    &__window {
-        border: 1px solid $colorButtons;
-        width: 342px;
-        height: 45px;
-        margin-bottom: 20px;
-        padding-left: 17px;
-        padding-right: 17px;
-    }
-
-
-    &__zip {
-        margin-bottom: 23px;
-    }
-
-
-    &__button {
-        border: 1px solid $colorButtons;
-        width: 100px;
-        height: 34px;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 11px;
-        line-height: 13px;
-        color: #4A4A4A;
-        cursor: pointer;
-        transition: .6s;
-        background-color: #FFFFFF;
-
-        &:hover {
-            background-color: $colorSelectSite;
-            color: #FFFFFF;
-        }
-    }
-}
-
-.total {
-
-    width: 360px;
-    height: 214px;
-    background-color: $colorGreyBack;
-
-    &__subtotal {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 11px;
-        line-height: 13px;
-        color: #4A4A4A;
-        margin-bottom: 12px;
-        margin-top: 39px;
-        margin-left: 218px;
-    }
-
-    &__grandtotal {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        color: $colorBlackBack;
-        margin-bottom: 21px;
-        margin-left: 153px;
-
-        &_sum {
-            font-weight: 700;
-            color: $colorSelectSite;
-        }
-    }
-
-    &__button {
-        margin-top: 17px;
-        margin-left: 44px;
-        border: 1px solid $colorSelectSite;
-        width: 273px;
-        height: 50px;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FFFFFF;
-        cursor: pointer;
-        transition: .6s;
-        background-color: $colorSelectSite;
-
-        &:hover {
-            transform: scale(1.05);
-        }
-    }
-}
-
 
 .scroll {
     border: 1px solid #EBEBEB;
@@ -526,6 +357,8 @@ a {
         align-items: center;
         gap: 24px;
         cursor: pointer;
+        transition: .6s;
+
     }
 
     &__item:hover {
@@ -547,123 +380,6 @@ a {
         line-height: 17px;
         text-align: center;
         color: #FBFBFB;
-    }
-}
-
-.login {
-    &__heading {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 19px;
-        color: $colorBlackBack;
-    }
-
-    &__name {
-        margin-top: 64px;
-    }
-
-    &__window {
-        border: 1px solid $colorButtons;
-        width: 360px;
-        height: 45px;
-        font-weight: 300;
-        font-size: 13px;
-        line-height: 16px;
-        color: #B1B1B1;
-        margin-top: 20.5px;
-        padding-left: 17px;
-        padding-right: 17px;
-    }
-
-    &__last_name {
-        margin-bottom: 31px;
-    }
-
-    &__gender {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 11px;
-        line-height: 13px;
-        color: $colorLoyalty;
-        display: flex;
-        gap: 10px;
-
-        &__label {
-            cursor: pointer;
-        }
-    }
-
-    &__details {
-        margin-top: 33px;
-    }
-
-    &__password {
-        margin-bottom: 15px;
-    }
-
-    &__text {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 13px;
-        line-height: 16px;
-        color: #b1b1b1;
-        width: 359px;
-        height: 32px;
-        margin-bottom: 39px;
-    }
-
-    &__button {
-        border: 1px solid $colorSelectSite;
-        width: 167px;
-        height: 50px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 17px;
-        color: #FFFFFF;
-        cursor: pointer;
-        transition: .6s;
-        background-color: $colorSelectSite;
-
-        &:hover {
-            transform: scale(1.05);
-        }
-    }
-}
-
-.loyalty {
-    margin-top: 64px;
-
-    &__heading {
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
-        color: $colorLoyalty;
-        margin-bottom: 22px;
-    }
-
-    &__text {
-        width: 650px;
-        height: 58px;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
-        color: $colorLoyalty;
-        margin-bottom: 21px;
-    }
-
-    &__list {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 24px;
-        line-height: 29px;
-        color: $colorLoyalty;
-
-        &_point {
-            margin-bottom: 16px;
-        }
     }
 }
 
@@ -804,83 +520,35 @@ a {
         box-sizing: border-box;
     }
 
-    .main {
-        margin-top: 59px;
-        margin-bottom: 128.5px;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 64px;
-        justify-content: center;
-    }
-
-    .main_registration {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-    }
-
-    .login {
-
-        &__window {
-            width: 330px;
-        }
-    }
-
-
     .product {
-        width: 734px;
-
         &-box__content {
-            display: flex;
-        }
-    }
-
-    .shipping {
-        width: 360px;
-
-        &__window {
-            width: 323px;
-        }
-    }
-
-    .checkout {
-        margin-left: 16px;
-        gap: 15px;
-        flex-direction: row;
-        align-items: center;
-
-    }
-
-    .button {
-        &-wrapper {
-            gap: 48.5px;
+            gap: 16px;
             display: flex;
             justify-content: center;
-        }
-
-    }
-
-    .loyalty {
-
-        &__heading {
-            font-size: 16px;
-            line-height: 19px;
-        }
-
-        &__text {
-            width: 350px;
-            font-weight: 300;
-            font-size: 16px;
-            line-height: 19px;
-        }
-
-        &__list {
-            font-size: 16px;
-            line-height: 19px;
-            width: 350px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
         }
     }
 
+    .product2 {
+        width: 360px;
+    }
+    
+    .product3 {
+        display: none;
+    }
+
+    .scroll {
+        &__wrapper {
+            margin-bottom: 63.5px;
+        }
+    }
+
+    .advantages {
+        flex-direction: column;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
 
     .subscribe {
         background: url(img/subscribe-laptop.jpg) no-repeat center;
