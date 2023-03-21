@@ -49,10 +49,12 @@
                 <input class="login__first_name login__window" placeholder="First Name" required><br>
                 <input class="login__last_name login__window" placeholder="Last Name" required><br>
                 <div class="login__gender">
+                    <input type="radio" id="radio-1" value="man" checked name="gender"/>
                     <label class="login__gender__label" for="radio-1">Male</label>
-                    <input type="radio" id="radio-1" value="man" checked name="gender" />
-                    <label class="login__gender__label" for="radio-2">Female</label>
-                    <input type="radio" id="radio-2" value="woman" checked name="gender" /> 
+                    <input type="radio" id="radio-2" value="woman" checked name="gender"/>
+                    <label class="login__gender__label" for="radio-2">Female</label> 
+                    <input type="radio" id="radio-3" value="other" checked name="gender"/>
+                    <label class="login__gender__label login__gender__label" for="radio-3">Other</label> 
                 </div>
                 <h3 class="login__heading login__details">Login details</h3>
                 <input class="login__email login__window" placeholder="Email" type="email" required><br>
