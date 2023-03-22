@@ -4,9 +4,9 @@ This project is an Online Clothing Shop made of 5 pages: main, catalog, product,
 
 ## Getting Started ##
 
-To get started, you can simply download or clone the repository to your local machine and open the index.html file in your browser.
+To get started, you can simply download or clone the repository to your local machine and open the html files in your browser.
 
-*git clone https://github.com/your-username/online-clothing-shop.git* 
+*git clone https://github.com/mariarchie/online-clothing-shop.git* 
 
 ## Pages ##
 
